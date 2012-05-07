@@ -12,9 +12,8 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: simple_cms_development
+  database: lol_random_development
   pool: 5
-  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,14 +22,12 @@ test:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: simple_cms_test
+  database: lol_random_test
   pool: 5
-  socket: /tmp/mysql.sock
 
 production:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: simple_cms_production
+  database: lol_random_production
   pool: 5
-  socket: /tmp/mysql.sock
