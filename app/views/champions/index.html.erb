@@ -1,0 +1,27 @@
+<h1>Listing champions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Image url</th>
+    <th>Guide url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @champions.each do |champion| %>
+  <tr>
+    <td><%= champion.name %></td>
+    <td><%= champion.image_url %></td>
+    <td><%= champion.guide_url %></td>
+    <td><%= link_to 'Show', champion %></td>
+    <td><%= link_to 'Edit', edit_champion_path(champion) %></td>
+    <td><%= link_to 'Destroy', champion, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Champion', new_champion_path %>

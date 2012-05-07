@@ -1,0 +1,15 @@
+<p>
+  <b>Name:</b>
+  <%= @champion.name %>
+</p>
+
+<p>
+  
+  <%= image_tag @champion.image_url %>
+</p>
+
+<p>
+  <b>Guide url:</b>
+  
+  <%= link_to "Link to #{@champion.name}'s guide", @champion.guide_url %>
+</p>

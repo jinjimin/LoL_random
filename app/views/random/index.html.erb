@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to "Fetch Random Champion!", random_generate_random_path, :remote => true %>
+<div id="random_champion">
+	<%= render 'random/champion' %>
+</div>
